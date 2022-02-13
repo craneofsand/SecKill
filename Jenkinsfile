@@ -11,6 +11,9 @@ pipeline {
     stage('Run') {
       steps {
         sh 'echo "Start application"'
+        sh 'cd src/main/java/com/imooc/miaosha'
+        sh 'javac MainApplication.java'
+        sh 'java MainApplication'
       }
     }
 
