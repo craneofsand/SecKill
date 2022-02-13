@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'echo "Install running enviroment"'
-        sh 'whoami'
+        sh 'sh install.sh'
       }
     }
 
