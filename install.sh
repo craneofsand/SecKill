@@ -1,3 +1,3 @@
 #!/bin/bash
-apt install -y mysql-server-5.7
-apt install -y redis
+sudo apt install -y mysql-server-5.7
+sudo apt install -y redis
