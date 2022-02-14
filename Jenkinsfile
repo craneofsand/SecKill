@@ -11,7 +11,7 @@ pipeline {
     stage('Run') {
       steps {
         sh 'echo "Start application"'
-        sh 'java MainApplication.jar'
+        sh 'java -jar MainApplication.jar'
       }
     }
 
