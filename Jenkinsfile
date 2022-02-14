@@ -12,8 +12,8 @@ pipeline {
       steps {
         sh 'echo "Start application"'
         sh 'mvn clean package'
-        sh 'cd target'
-        sh 'java -jar /var/lib/jenkins/workspace/SecKill_main/target/SecKill.jar'
+        sh 'java -jar /var/lib/jenkins/workspace/SecKill_main/target/SecKill.jar &'
+        sh 'echo "application is running!"'
       }
     }
 
