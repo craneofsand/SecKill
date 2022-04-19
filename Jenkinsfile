@@ -20,7 +20,6 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo "Chech whether project works well"'
-        sh 'netstat -anp | grep 8001'
         sh 'java -jar /var/lib/jenkins/workspace/SecKill_main/test/Alige.jar'
       }
     }
