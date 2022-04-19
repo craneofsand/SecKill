@@ -21,6 +21,7 @@ pipeline {
       steps {
         sh 'echo "Chech whether project works well"'
         sh 'curl http://172.19.241.93:8001/login/to_login | grep "用户登录"'
+        sh 'java -jar test/Alige.jar'
       }
     }
 
