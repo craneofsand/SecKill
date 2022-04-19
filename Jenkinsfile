@@ -22,7 +22,7 @@ pipeline {
         sh 'echo "Chech whether project works well"'
         sh 'netstat -anp | grep 8001'
         sh 'curl http://172.19.241.93:8001/login/to_login'
-        sh 'java -jar test/Alige.jar'
+        sh 'java -jar /var/lib/jenkins/workspace/SecKill_main/test/Alige.jar'
       }
     }
 
